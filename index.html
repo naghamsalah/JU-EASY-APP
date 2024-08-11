@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JU Easy Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Authentication Page -->
+    <div id="auth-page">
+        <div class="auth-container">
+            <h1>Welcome to JU Easy!</h1>
+            <div id="auth-forms">
+                <!-- Login Form -->
+                <div id="login-form">
+                    <h2>Login</h2>
+                    <form id="login-form-element">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="login-email" required>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#" id="to-register">Register here</a></p>
+                </div>
+                <!-- Registration Form -->
+                <div id="register-form" class="hidden">
+                    <h2>Register</h2>
+                    <form id="register-form-element">
+                        <label for="register-name">Name:</label>
+                        <input type="text" id="register-name" name="register-name" required>
+                        <label for="register-email">Email:</label>
+                        <input type="email" id="register-email" name="register-email" required>
+                        <label for="register-password">Password:</label>
+                        <input type="password" id="register-password" name="register-password" required>
+                        <button type="submit">Register</button>
+                    </form>
+                    <p>Already have an account? <a href="#" id="to-login">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="app-content" class="hidden">
+        <header>
+            <h1>JU EASY</h1>
+            <input type="text" id="search" placeholder="Search facilities...">
+        </header>
+        <main>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.963411838989!2d35.866970674602044!3d32.01610477399081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c9f765ba05b27%3A0x5a5ba049c504b635!2sUniversity%20of%20Jordan!5e0!3m2!1sen!2sjo!4v1723304772135!5m2!1sen!2sjo" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="categories">
+                <div class="category" id="Banks"> Banks</div>
+                <div class="category" id="pharmacies"> Pharmacies</div>
+                <div class="category" id="Schools"> Faculties</div>
+                <div class="category" id="faculty-members"> Schools </div>
+            </div>
+            <div id="Pharmacies-details" class="hidden">
+                <h2> Pharmacies</h2>
+                <div class="subcategory" id="Hikaya Pharmacy"> Hikaya Pharmacy</div>
+                <div class="subcategory" id="Ola Pharmacy">Ola Pharmacy</div>
+                <div class="subcategory" id="PharmaCure Pharmacy"> PharmaCure Pharmacy</div>
+                <div class="subcategory" id="Jital Pharmacy">Jital Pharmacy</div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <a href="#" id="Home">Home</a>
+                <a href="#" id="Book A Guide">Book A Guide</a>
+                <a href="#" id="Account">Account</a>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
